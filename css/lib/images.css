@@ -1,8 +1,10 @@
 /*------------
 Use this file as a place to write your responsive image rules
 	- images should never be larger than their column
+
+	Bonus: There are times when we don't want images to take up their entire column on smaller screens
 	- images should never be larger than 70% of their column when on small screens (say 449px and smaller)
-		- at this size, images should be centered within their column
+		- at this size, images should be centered within their column, tip: margins
 
 Don't forget to have a look at the fluid_test.css file if your interested in the styles and media queries that make the layout change
 --------------*/
