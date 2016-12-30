@@ -16,12 +16,6 @@
 	box-sizing: border-box;
 }
 
-/* added CSS to make images constrain their size*/
-
-.fluid_test__column img{
-	max-width: 100%;
-	height: auto;
-}
 
 .fluid_test__column p{
 	font-size: 16px;

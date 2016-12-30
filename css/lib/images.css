@@ -1,0 +1,14 @@
+/*------------
+Use this file as a place to write your responsive image rules
+	- images should never be larger than their column
+
+Don't forget to have a look at the fluid_test.css file if your interested in the styles and media queries that make the layout change
+--------------*/
+
+
+/* added CSS to make images constrain their size at any breakpoint*/
+
+img{
+	max-width: 100%;
+	height: auto;
+}
