@@ -10,7 +10,10 @@ Don't forget to have a look at the fluid_test.css file if your interested in the
 --------------*/
 
 
-/* added CSS to make images constrain their size at any breakpoint*/
+/*
+	Prevent images from being
+	larger than their columns
+*/
 
 img{
 	max-width: 100%;
@@ -23,7 +26,7 @@ Bonus: Mobile image sizing
 ----------------*/
 @media screen and (max-width: 449px){
 	img{
-		width: 70%;
+		max-width: 70%;
 		/*center images (70% + 15% + 15% = 100%)*/
 		margin-left: 15%; 
 		margin-right: 15%;
