@@ -1,54 +1,60 @@
-.fluid_test{
-	max-width: 1140px;
-	padding-left: 24px;
-	padding-right: 24px;
-	margin-left: auto;
-	margin-right: auto;
+.fluid_test {
+  max-width: 1140px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.fluid_test__column{
-	background-color: #FFB74D;
-	padding:24px 10px;
-	margin-bottom: 14px;
-	/* Because we've set paddings, we want to change the box sizing to make it easier to position the columns in percentages later [https://css-tricks.com/box-sizing/]*/
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+.fluid_test__column {
+  background-color: #FFB74D;
+  padding: 24px 10px;
+  margin-bottom: 14px;
+  /* Because we've set paddings, we want to change the box sizing to make it easier to position the columns in percentages later [https://css-tricks.com/box-sizing/]*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-.fluid_test__column p{
-	font-size: 16px;
-	line-height: 28px;
-	margin: 0;
+
+.fluid_test__column p {
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0;
 }
+
 
 /*From this point on, we're flosting the columns*/
-@media screen and (min-width: 450px){
-	.fluid_test__column{
-		float: left;
-		margin-left: 2%;
-		margin-bottom: 2%; /*change margin to match*/
-	}
+
+@media screen and (min-width: 450px) {
+  .fluid_test__column {
+    float: left;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    /*change margin to match*/
+  }
 }
+
 
 /* Media queries must not overlap, so we end the max-width 1px short of our next min-width*/
-@media screen and (min-width: 450px) and (max-width: 549px){
-	.fluid_test__column{
-		width: 49%;
-	}
-	.fluid_test__column:first-child{
-		width: 100%;
-		margin-left: 0;
-	}
-	.fluid_test__column:nth-child(2){
-		margin-left: 0;
-	}
+
+@media screen and (min-width: 450px) and (max-width: 549px) {
+  .fluid_test__column {
+    width: 49%;
+  }
+  .fluid_test__column:first-child {
+    width: 100%;
+    margin-left: 0;
+  }
+  .fluid_test__column:nth-child(2) {
+    margin-left: 0;
+  }
 }
 
-@media screen and (min-width: 550px){
-	.fluid_test__column{
-		width: 32%;
-	}
-	.fluid_test__column:first-child{
-		margin-left: 0;
-	}
+@media screen and (min-width: 550px) {
+  .fluid_test__column {
+    width: 32%;
+  }
+  .fluid_test__column:first-child {
+    margin-left: 0;
+  }
 }
